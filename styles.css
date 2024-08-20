@@ -33,3 +33,13 @@ img {
     height: auto;
     border-radius: 8px; 
 }
+
+button {
+    color: azure;
+    background-color: midnightblue;
+}
+
+button:hover {
+    color: midnightblue;
+    background-color: azure;
+}
