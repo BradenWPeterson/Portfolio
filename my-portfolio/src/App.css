@@ -1,18 +1,171 @@
-.App {
+/* Styles for Navbar */
+.nav {
   background-color: white;
-  font-family: 'Times New Roman', Times, serif;
-  color: white;
-  background-color: rgb(114, 104, 104);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-input {
-  color: midnightblue;
+/* Container for navigation links */
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Style for the links */
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  color: #007bff;
+  transform: scale(1.1);
+}
+
+/* Style for the h1 */
+.nav h1 {
+  margin: 0;
+  color: black;
+}
+
+h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 body {
-  background-color: rgb(114, 104, 104);
+  background-color: lightslategrey;
 }
 
-h1 {
+/* Social media icons container */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+/* Style for social media icons */
+.social-links a {
+    color: black;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for social icons */
+.social-links a:hover {
+    color: #007bff;
+    transform: scale(1.1);
+}
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;  /* This helps center vertically */
+    padding: 2rem;
+}
+
+.profile-pic {
+    width: 400px;  /* Increased from 200px */
+    height: 400px;  /* Increased from 200px */
+    border-radius: 50%;  /* Makes it circular */
+    object-fit: cover;
+    margin: 2rem 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Optional: adds subtle shadow */
+}
+
+/* About page styles */
+.about {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about p {
+    color: white;
+    font-size: 1.2rem;  /* Makes text bigger */
+    line-height: 1.8;   /* Adds more spacing between lines */
+    margin-bottom: 1.5rem;  /* Space between paragraphs */
+}
+
+.about h2 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.projects {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
   text-align: center;
+}
+
+.projects h2 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact h2 {
+    color: white;
+    font-size: 3rem;
+    margin-top: 2rem;  /* Add space at top */
+    margin-bottom: 4rem;  /* More space below heading */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    margin-top: 2rem;  /* Space after heading */
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;  /* More space between icon and text */
+}
+
+.contact-icon {
+    font-size: 2.5rem;  /* Bigger icons */
+    color: white;  /* Explicitly white icons */
+}
+
+.contact-item a {
+    color: white;  /* White text */
+    font-size: 2rem;  /* Bigger text */
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+.app-wrapper {
+    position: relative;
+    min-height: 100vh;
 }
